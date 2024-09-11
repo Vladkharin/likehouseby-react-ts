@@ -1,0 +1,1705 @@
+* {
+  box-sizing: border-box;
+}
+
+.stylePagetl17585 {
+  top: 175px;
+  left: 85px;
+}
+
+.stylePagetl24085 {
+  top: 240px;
+  left: 85px;
+}
+
+.stylePageerror {
+  position: absolute;
+  top: 0;
+  color: red;
+  background-color: #fff;
+  padding: 8px 10px;
+  border-radius: 2px;
+  z-index: 1;
+  margin-top: 5px;
+  left: 0;
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.2);
+  opacity: 0;
+}
+
+.stylePage_req:focus {
+  border: 1px solid #000;
+}
+.stylePage_req.stylePage_error {
+  border: 1px solid red;
+}
+
+.stylePagefeedBackModal {
+  background-color: #fff;
+  padding: 40px 40px 50px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: default;
+  width: 800px;
+  height: 500px;
+  position: absolute;
+}
+
+.stylePagefeedBackModal__wrapper {
+  background-color: #fff;
+  padding: 40px 40px 50px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  cursor: default;
+  width: 360px;
+  height: 185px;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+}
+
+.stylePagecrestikBlack {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.stylePagefeedBackModal__complete {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #62c584;
+  border-radius: 100%;
+  position: relative;
+}
+/* .stylePagefeedBackModal__complete::before{
+  top: 50%;
+  height: 50%;
+  width: 3px;
+  background-color: #336699;
+  content: "";
+  transform: translateX(10px) rotate(-45deg);
+  transform-origin: left bottom;
+} */
+.stylePagefeedBackModal__complete::after {
+  width: 15px;
+  height: 11px;
+  content: "\2713";
+  color: #62c584;
+  position: absolute;
+  top: 12px;
+  left: 18px;
+}
+
+.stylePagefeedBackModal__text {
+  padding-top: 20px;
+  font-family: "FuturaPTWebLight";
+}
+.stylePageorder {
+  width: 100%;
+  height: 41px;
+  position: fixed;
+  bottom: 41px;
+  background-color: #074097;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+}
+
+body {
+  font-family: "FuturaPTWebBook", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.stylePagecontainer {
+  margin: 0 auto;
+  width: 304px;
+}
+
+.stylePagenav {
+  font-family: "FuturaPTWebLight";
+  height: 101px;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  background-color: #fff;
+  border-bottom: 1px solid #31373e;
+  transition: all 0stylePage4s cubic-bezier(0, 0, 0stylePage8, 1);
+}
+
+.stylePagenav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.stylePagenav__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  cursor: pointer;
+}
+
+.stylePagemenu__linkMainPage {
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: none;
+  color: #31373e;
+}
+
+.stylePagenav__links {
+  display: none;
+}
+
+.stylePagenav__icons {
+  width: 50%;
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.stylePagenav__icon {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.stylePagenav__icon img {
+  width: 35px;
+  height: 35px;
+}
+
+.stylePagenav__item-title {
+  display: none;
+  text-decoration: none;
+  color: rgb(49, 55, 62);
+}
+
+.stylePagepayment {
+  padding-top: 150px;
+}
+
+.stylePagepayment__header {
+  color: #31373e;
+  font-size: 54px;
+  line-height: 62px;
+  font-weight: 400;
+}
+
+.stylePagepayment__subtitle {
+  margin-top: 20px;
+  color: #31373e;
+  font-size: 20px;
+  line-height: 31px;
+  font-weight: 400;
+}
+
+.stylePagepayment__item {
+  margin-top: 40px;
+}
+
+.stylePagepayment__item-text {
+  color: #31373e;
+  font-size: 20px;
+  line-height: 31px;
+  font-weight: 400;
+  display: flex;
+  column-gap: 75px;
+  align-items: center;
+  border-bottom: 1px solid #e29a01;
+}
+.stylePagepayment__item-text span {
+  color: #e29a01;
+  font-size: 30px;
+  line-height: 47px;
+  font-weight: 400;
+}
+
+.stylePagepayment__item-descr {
+  margin-top: 10px;
+  color: #31373e;
+  font-size: 20px;
+  line-height: 31px;
+  font-weight: 400;
+  padding-left: 10px;
+}
+
+.stylePagehelp {
+  margin-top: 100px;
+  padding: 100px 0;
+  background-color: #084097;
+}
+
+.stylePagehelp__header {
+  color: #ffffff;
+  font-size: 54px;
+  line-height: 62px;
+  font-weight: 400;
+  max-width: 240px;
+}
+
+.stylePagehelp img {
+  margin-top: 20px;
+  width: 304px;
+  height: 225px;
+}
+
+.stylePagehelp__item {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1stylePage55;
+  font-weight: 400;
+  padding: 27px 0;
+}
+.stylePagehelp__item span {
+  color: rgb(226, 154, 1);
+  font-size: 20px;
+  line-height: 1stylePage55;
+  font-weight: 400;
+}
+
+.stylePageline2 {
+  width: 304px;
+  height: 1px;
+  opacity: 0stylePage25;
+  background-color: #ffffff;
+}
+
+.stylePagemortgage {
+  padding: 100px 0;
+}
+
+.stylePagemortgage iframe {
+  width: 300px;
+  height: 400px;
+  margin-top: 50px;
+}
+
+.stylePagematernalCapital {
+  padding-bottom: 100px;
+}
+
+.stylePagematernalCapital__items {
+  margin-top: 39px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.stylePagematernalCapital__item {
+  width: 300px;
+  border: 1px solid rgba(49, 55, 62, 0.25);
+  position: relative;
+  display: flex;
+  padding: 55px 20px 20px 20px;
+}
+
+.stylePagematernalCapital__item-number {
+  position: absolute;
+  color: #e29a01;
+  font-size: 14px;
+  line-height: 1stylePage55;
+  font-weight: 400;
+  top: 10px;
+  left: 20px;
+}
+
+.stylePagematernalCapital__item-text {
+  color: #31373e;
+  font-size: 20px;
+  line-height: 1stylePage55;
+  font-weight: 400;
+}
+
+.stylePagerequisites__item {
+  color: #31373e;
+  font-size: 20px;
+  line-height: 31px;
+  font-weight: 400;
+}
+.stylePagerequisites__items {
+  margin: 10px 0 139px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.stylePagefirstBlock {
+  min-height: 1000px;
+  padding-top: 160px;
+}
+
+.stylePagefirstBlock__header {
+  color: #31373e;
+  font-size: 54px;
+  line-height: 1stylePage55;
+  font-weight: 400;
+}
+
+.stylePagefirstBlock__carousel {
+  position: relative;
+}
+
+.stylePagefirstBlock__carousel-item {
+  width: 300px;
+  height: 225px;
+  cursor: zoom-in;
+}
+
+.stylePagefirstBlock__carousel-right {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  right: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding-top: 3px;
+  border: none;
+}
+
+.stylePagefirstBlock__carousel-right img {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.stylePagefirstBlock__carousel-left img {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.stylePagefirstBlock__wrapper-field {
+  overflow: hidden;
+  width: 290px;
+  margin-left: 10px;
+  position: absolute;
+  bottom: -150px;
+}
+
+.stylePagefirstBlock__carousel-left {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  left: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding-top: 3px;
+  border: none;
+}
+
+.stylePagefirstBlock__field {
+  display: flex;
+  width: 100%;
+  transition: all 0.5s;
+  margin: 0 auto;
+}
+
+.stylePagefirstBlock__field-img {
+  min-height: 75px;
+  max-width: 95px;
+  max-height: 75px;
+  min-width: 95px;
+  transform: scale(0.9);
+  filter: grayscale(1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.stylePagefirstBlock__information {
+  margin-top: 100px;
+}
+
+.stylePagefirstBlock__button {
+  width: 300px;
+  height: 60px;
+  border-width: 2px;
+  background-position: center center;
+  border-color: #31373e;
+  border-style: solid;
+  color: #31373e;
+  font-size: 20px;
+  line-height: 2;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.stylePagefirstBlock__information-text {
+  color: #31373e;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.stylePagefirstBlock__gridBlock {
+  margin-top: 40px;
+}
+.stylePagefirstBlock__gridBlock img {
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+}
+
+.stylePagefirstBlock__grid-header {
+  color: #31373e;
+  font-size: 20px;
+  line-height: 2;
+  font-weight: 600;
+}
+
+.stylePagesecondBlock {
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+.stylePagesecondBlock__header {
+  color: #31373e;
+  font-size: 40px;
+  line-height: 46px;
+  font-weight: 400;
+}
+
+.stylePagesecondBlock__items {
+  margin-top: 30px;
+  margin-bottom: 97px;
+  display: flex;
+  flex-direction: column;
+}
+.stylePageline {
+  height: 1px;
+  width: 304px;
+  background-color: #afb1b5;
+}
+
+.stylePagesecondBlock__item {
+  display: flex;
+  padding: 20px 0;
+  column-gap: 35px;
+}
+
+.stylePagesecondBlock__item-name {
+  min-width: 135px;
+  color: #31373e;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.stylePagesecondBlock__item-key {
+  min-width: 140px;
+  color: #31373e;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.stylePagesecondBlock__service {
+  position: relative;
+  margin: 10px 0;
+}
+
+.stylePagesecondBlock__service-button {
+  position: absolute;
+  height: 26px;
+  width: 52px;
+  background-color: #f0f0f0;
+  box-shadow: 0px 0px 4px 0px rgba(201, 201, 201, 1);
+  border-radius: 13px;
+  cursor: pointer;
+  opacity: 0.6;
+  border-width: 0;
+  margin-right: 15px;
+  transition: all 0.2s;
+}
+
+.stylePageinactiveBtn {
+  content: "";
+  height: 26px;
+  width: 26px;
+  box-shadow: inset 0px 0 13px 0px #7d7d7d;
+  position: absolute;
+  border-radius: 13px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  border: none;
+}
+
+.stylePagesecondBlock__service-text {
+  font-size: 19px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  text-indent: 65px;
+  line-height: 1.55;
+  text-decoration: none;
+}
+.stylePagesecondBlock__service-span {
+  color: #ff8562;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  box-shadow: none;
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: 19px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.stylePagesecondBlock__services-header {
+  margin-top: 30px;
+  color: rgb(0, 0, 0);
+  padding-bottom: 5px;
+  font-size: 29px;
+  font-weight: 400;
+}
+
+.stylePagesecondBlock__services-subtitle {
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  padding: 10px 0;
+  max-width: 240px;
+}
+
+.stylePagesecondBlockMenu__button {
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  padding: 16px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  width: 304px;
+  text-align: start;
+  position: relative;
+}
+.stylePagesecondBlockMenu__button::after {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 4px 0 4px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  border-color: #000 transparent transparent transparent;
+  background: url("../icons/caret-down-solid.svg");
+}
+
+.stylePagesecondBlockMenu__header {
+  color: #31373e;
+  font-size: 54px;
+  line-height: 1stylePage55;
+  font-weight: 400;
+  align-self: start;
+}
+
+.stylePagesecondBlockMenu__menu {
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  z-index: 2;
+}
+
+.stylePagesecondBlockMenu__text:first-child {
+  border-top: 1px solid #31373e;
+  border-right: 1px solid #31373e;
+  border-left: 1px solid #31373e;
+  border-radius: 5px 5px 0 0;
+}
+.stylePagesecondBlockMenu__text:last-child {
+  border-bottom: 1px solid #31373e;
+  border-right: 1px solid #31373e;
+  border-left: 1px solid #31373e;
+  border-radius: 0 0 5px 5px;
+}
+
+.stylePagesecondBlockMenu__text {
+  width: 304px;
+  border-right: 1px solid #31373e;
+  border-left: 1px solid #31373e;
+  border-top: none;
+  border-bottom: none;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  font-size: 19px;
+  font-weight: 400;
+  text-align: start;
+  padding: 4px 5px;
+  margin: 0;
+  font-family: "FuturaPTWebBook";
+}
+
+.stylePagesecondBlockMenu__text:hover {
+  background: #777;
+}
+
+.stylePagesecondBlock__service-input {
+  width: 40px;
+  height: 28px;
+  padding: 8px 10px;
+  margin-left: 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.4);
+  background-color: #fff;
+  text-align: center;
+  border: none;
+}
+
+.stylePagesecondBlock__service-numberStart {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.stylePagesecondBlock__service-numberEnd {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.stylePagesecondBlock__service-numberCounter {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  top: 0;
+  left: 0;
+  padding: 8px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  text-align: center;
+}
+
+.stylePagethirdBlock {
+  margin-top: 36px;
+  margin-bottom: 60px;
+}
+
+.stylePagethirdBlock__header {
+  color: #31373e;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.stylePagethirdBlock__item {
+  width: 300px;
+  height: 487px;
+  background: url("../icons/Iphone.webp") center center/cover no-repeat;
+  position: relative;
+  margin-left: -50px;
+}
+
+.stylePagethirdBlock__item iframe {
+  position: absolute;
+  top: 79px;
+  left: 58px;
+}
+
+.stylePagefooter {
+  background-color: #000000;
+  padding: 60px 0;
+  margin-top: 60px;
+}
+
+.stylePagefooter__wrapper {
+  display: flex;
+  column-gap: 72px;
+  position: relative;
+}
+
+.stylePagefooter__img {
+  width: 50px;
+  height: 50px;
+  opacity: 0stylePage25;
+  position: absolute;
+  left: -7px;
+}
+
+.stylePagefooter__items {
+  display: flex;
+  flex-direction: column;
+  padding-left: 123px;
+}
+
+.stylePagefooter__item {
+  margin-bottom: 30px;
+}
+
+.stylePagefooter__item-linkWithdecoration {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  font-size: 18px;
+  font-family: "FuturaPTWebLight";
+  color: #fff;
+  box-shadow: none;
+  text-decoration: none;
+}
+
+.stylePagefooter__item-header {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "FuturaPTWebLight";
+  line-height: 1.7;
+  font-weight: 400;
+  opacity: 0stylePage5;
+}
+
+.stylePagefooter__item-title {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.55;
+  font-family: "FuturaPTWebLight";
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.stylePagefooter__item-linkWithOutdecoration {
+  color: #fff;
+  border-bottom: none;
+  box-shadow: none;
+  font-family: "FuturaPTWebLight";
+  text-decoration: none;
+}
+
+.stylePagefooter__item-title span {
+  font-family: "FuturaPTWebLight";
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.stylePagefooter__socials {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 20px;
+  width: 110px;
+}
+
+.stylePagefooter__social {
+  height: 45px;
+  width: 45px;
+}
+.stylePagemodal {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  top: 0;
+}
+.stylePagemodalMain {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  top: 0;
+}
+.stylePageorderModal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  top: 0;
+}
+.stylePageorderModal__wrapper {
+  display: flex;
+  width: 800px;
+  height: 500px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.stylePageorderModal__wrapper > form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  position: relative;
+}
+
+.stylePageorderModal__wrapper > form > button {
+  width: 300px;
+  height: 70px;
+  border: 2px solid #000;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #ffffff;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.stylePageorderModal__wrapper > form > label > p {
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+.stylePageorderModal__wrapper > form > label > div {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.stylePageorderModal__wrapper > form > label > input {
+  width: 300px;
+  height: 50px;
+  border: 1px solid #000;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0 20px;
+}
+
+.stylePageorders {
+  width: 50%;
+  margin: 50px 0;
+}
+
+.stylePageorderWrapper {
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 260px;
+}
+
+.stylePageorders > p {
+  font-size: 34px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  line-height: 1.55;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 0;
+}
+
+.stylePageorderItem {
+  font-size: 19px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  line-height: 1.55;
+  text-decoration: none;
+}
+
+.stylePageorderModal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  z-index: 1;
+}
+
+.stylePageorderModal__close::before,
+.stylePageorderModal__close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+}
+
+.stylePageorderModal__close::before {
+  transform: rotate(45deg);
+}
+
+.stylePageorderModal__close::after {
+  transform: rotate(-45deg);
+}
+
+.stylePagetotal {
+  margin-top: 30px;
+}
+.stylePagemodal__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.stylePagemodalMain__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.stylePagemodal__img {
+  width: 170px;
+  height: 200px;
+  cursor: zoom-in;
+}
+.stylePagemodalMain__img {
+  width: 170px;
+  height: 200px;
+  cursor: zoom-in;
+}
+
+.stylePagemodal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  z-index: 1;
+}
+
+.stylePagemodal__close::before,
+.stylePagemodal__close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+}
+
+.stylePagemodal__close::before {
+  transform: rotate(45deg);
+}
+
+.stylePagemodal__close::after {
+  transform: rotate(-45deg);
+}
+.stylePagemodal__closeBlack {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  z-index: 1;
+}
+
+.stylePagemodal__closeBlack::before,
+.stylePagemodal__closeBlack::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #000;
+}
+
+.stylePagemodal__closeBlack::before {
+  transform: rotate(45deg);
+}
+
+.stylePagemodal__closeBlack::after {
+  transform: rotate(-45deg);
+}
+
+.stylePagemodal__right {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  right: 2%;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding-top: 3px;
+  border: none;
+}
+
+.stylePagemodal__left {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  left: 2%;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding-top: 3px;
+  border: none;
+}
+
+.stylePagemodal__right img {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.stylePagemodal__left img {
+  width: 15px;
+  height: 15px;
+}
+
+.stylePageslider {
+  width: 290px;
+}
+
+.stylePagecost {
+  width: 100%;
+  height: 41px;
+  position: fixed;
+  bottom: 0;
+  background-color: #074097;
+  padding: 0.5em 0em;
+  font-size: 19px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.stylePagenav__item-linkWithOutdecoration {
+  color: rgb(49, 55, 62);
+  border-bottom: none;
+  box-shadow: none;
+  text-decoration: none;
+}
+.stylePagenav__item-linkWithOutdecoration span {
+  color: rgb(49, 55, 62);
+  border-bottom: none;
+  box-shadow: none;
+  text-decoration: none;
+}
+
+.stylePagefirstBlock__wrapper-field {
+  bottom: -85px;
+}
+
+.stylePagebig {
+  height: 1650px;
+}
+
+.stylePagebgwhite {
+  background: #fff;
+}
+
+.stylePageimgsquare {
+  height: 210px;
+  width: 210px;
+}
+
+.stylePageimgsmall {
+  width: 320px;
+  height: 180px;
+}
+
+@media (min-width: 481px) {
+  .stylePagecontainer {
+    width: 451px;
+  }
+
+  .stylePagehelp img {
+    display: none;
+  }
+
+  .stylePagehelp__header {
+    max-width: 510px;
+    font-size: 52px;
+  }
+
+  .stylePagemortgage iframe {
+    width: 451px;
+  }
+
+  .stylePagematernalCapital__items {
+    align-items: center;
+  }
+
+  .stylePagenav__wrapper {
+    height: 101px;
+  }
+  .stylePagenav__icons {
+    width: 70%;
+  }
+
+  .stylePagefirstBlock__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stylePagesecondBlock__item-name {
+    max-width: 160px;
+    min-width: 160px;
+  }
+
+  .stylePageline {
+    width: 451px;
+  }
+
+  .stylePagethirdBlock__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stylePagesecondBlockMenu__button {
+    width: 451px;
+  }
+  .stylePagesecondBlockMenu__text {
+    width: 451px;
+  }
+
+  .stylePagefooter__wrapper {
+    display: flex;
+    column-gap: 120px;
+  }
+  .stylePagemodal__img {
+    width: 250px;
+    height: 310px;
+  }
+  .stylePagemodalMain__img {
+    width: 250px;
+    height: 310px;
+  }
+
+  .stylePageslider {
+    width: 451px;
+  }
+
+  .stylePagesquare {
+    width: 310px;
+  }
+
+  .stylePagebig {
+    height: 1650px;
+  }
+}
+
+@media (min-width: 640px) {
+  .stylePagecontainer {
+    width: 620px;
+  }
+
+  .stylePagesecondBlockMenu__text {
+    width: 620px;
+  }
+
+  .stylePagefirstBlock {
+    min-height: 1200px;
+  }
+
+  .stylePagemortgage iframe {
+    width: 620px;
+  }
+
+  .stylePagematernalCapital__item {
+    height: 283px;
+  }
+  .stylePagematernalCapital__items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 40px;
+  }
+
+  .stylePagenav__item-title {
+    display: block;
+  }
+  .stylePagenav__icons {
+    width: 50%;
+  }
+
+  .stylePagefirstBlock__carousel-item {
+    width: 620px;
+    height: 465px;
+  }
+
+  .stylePageline {
+    width: 620px;
+  }
+
+  .stylePagesecondBlockMenu__button {
+    width: 620px;
+  }
+
+  .stylePagethirdBlock__items {
+    flex-direction: row;
+    column-gap: 50px;
+  }
+
+  .stylePagefooter__items {
+    flex-direction: row;
+    column-gap: 55px;
+    position: relative;
+    padding-left: 220px;
+  }
+
+  .stylePagefooter__item {
+    padding-top: 20px;
+  }
+
+  .stylePagefooter {
+    column-gap: 150px;
+    height: 465px;
+  }
+
+  .stylePagefooter__wrapper {
+    height: 360px;
+  }
+
+  .stylePagefooter__socialItem {
+    position: absolute;
+    right: 60px;
+    bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .stylePagemodal__img {
+    width: 300px;
+    height: 410px;
+    scale: 1;
+  }
+  .stylePagemodalMain__img {
+    width: 300px;
+    height: 410px;
+  }
+
+  .stylePageslider {
+    width: 620px;
+  }
+
+  .stylePagesquare {
+    width: 410px;
+  }
+
+  .stylePagefirstBlock__wrapper-field {
+    left: 25%;
+  }
+
+  .stylePagebig {
+    height: 1850px;
+  }
+}
+
+@media (min-width: 815px) {
+  .stylePagecost {
+    width: 270px;
+    height: 42px;
+    bottom: 20px;
+    right: 0px;
+  }
+
+  .stylePageorder {
+    width: 270px;
+    height: 42px;
+    bottom: 65px;
+    right: 0px;
+  }
+}
+
+@media (min-width: 960px) {
+  .stylePagecontainer {
+    width: 940px;
+  }
+
+  .stylePagemodal__right {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    right: 10%;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding-top: 3px;
+    border: none;
+  }
+
+  .stylePagemodal__left {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    left: 10%;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding-top: 3px;
+    border: none;
+  }
+
+  .stylePagepayment__item-text {
+    min-width: 300px;
+    border-bottom: none;
+  }
+  .stylePagepayment__item {
+    display: flex;
+    column-gap: 110px;
+    border-bottom: 1px solid #e29a01;
+    padding-bottom: 30px;
+  }
+
+  .stylePagemodal__img {
+    scale: 1stylePage5;
+  }
+
+  .stylePageimgHeight100 {
+    height: 560px;
+    width: 670px;
+    scale: 1;
+  }
+  .stylePageimgSmallest {
+    width: 592px;
+    height: 498px;
+    scale: 1;
+  }
+
+  .stylePageimg396560 {
+    width: 396px;
+    height: 560px;
+    scale: 1;
+  }
+
+  .stylePageimgsquare {
+    width: 560px;
+    height: 560px;
+    scale: 1;
+  }
+
+  .stylePageigmliitleBit {
+    width: 793px;
+    height: 560px;
+    scale: 1;
+  }
+
+  .stylePageimgsmall {
+    height: 415px;
+    width: 860px;
+    scale: 1;
+  }
+
+  .stylePageimgconvector {
+    width: 750px;
+    height: 560px;
+    scale: 1;
+  }
+
+  .stylePagehelp__wrapper {
+    display: flex;
+    column-gap: 50px;
+  }
+
+  .stylePagehelp__item {
+    width: 560px;
+  }
+
+  .stylePageline2 {
+    width: 560px;
+  }
+
+  .stylePagehelp img {
+    display: block;
+    width: 460px;
+    height: 345px;
+    margin-top: 31px;
+  }
+
+  .stylePagematernalCapital__item {
+    width: 450px;
+    height: 223px;
+  }
+
+  .stylePagerequisites__items {
+    flex-direction: row;
+    column-gap: 100px;
+  }
+
+  #phone {
+    display: none;
+  }
+
+  .stylePagenav__icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .stylePagenav__icon img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .stylePagenav__item-title {
+    font-size: 18px;
+  }
+
+  .stylePagenav__icons {
+    width: 70%;
+  }
+
+  .stylePagefirstBlock__carousel-item {
+    width: 560px;
+    height: 420px;
+  }
+
+  .stylePagefirstBlock__field-img {
+    min-width: 180px;
+    min-height: 135px;
+    max-width: 180px;
+    max-height: 135px;
+  }
+
+  .stylePagefirstBlock__wrapper-field {
+    width: 530px;
+    margin-top: 10px;
+    left: 0;
+    bottom: -150px;
+  }
+  .stylePagefirstBlock__wrapper {
+    display: grid;
+    grid-template-columns: 560px 480px;
+    grid-template-rows: 550px;
+    column-gap: 40px;
+    align-items: start;
+  }
+
+  .stylePagemodalBig {
+    height: 85%;
+    width: 720px;
+  }
+  .stylePagemodalSmall {
+    width: 600px;
+    height: 450px;
+  }
+
+  .stylePagemodalAverage {
+    width: 960px;
+    height: 720px;
+  }
+
+  .stylePagefirstBlock__gridBlock {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+
+  .stylePagefirstBlock__information {
+    margin-top: 0;
+  }
+
+  .stylePagefirstBlock__button {
+    margin-top: 40px;
+  }
+
+  .stylePagefirstBlock {
+    min-height: 860px;
+  }
+
+  .stylePagesecondBlock__item {
+    width: 620px;
+  }
+  .stylePagesecondBlock__items {
+    align-items: center;
+  }
+
+  .stylePagesecondBlock__item-name {
+    min-width: 179px;
+    max-width: 179px;
+  }
+
+  .stylePagesecondBlockMenu__button {
+    width: 940px;
+  }
+
+  .stylePagesecondBlockMenu__text {
+    width: 940px;
+  }
+
+  .stylePagethirdBlock__items {
+    justify-content: normal;
+  }
+
+  .stylePagefooter__socialItem {
+    position: static;
+  }
+
+  .stylePagefooter__items {
+    column-gap: 148px;
+  }
+
+  .stylePagebath {
+    margin-top: 0;
+  }
+
+  .stylePagebig {
+    height: 1250px;
+  }
+
+  .stylePagesecondBlock__services-subtitle {
+    max-width: 430px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .stylePagecontainer {
+    width: 1160px;
+  }
+
+  .stylePageline2 {
+    width: 415px;
+  }
+
+  .stylePagehelp img {
+    width: 500px;
+    height: 375px;
+  }
+
+  .stylePagemortgage iframe {
+    width: 1160px;
+  }
+
+  .stylePagematernalCapital__item {
+    width: 560px;
+    height: 192px;
+  }
+  .stylePagesecondBlock__item-name {
+    min-width: 340px;
+    max-width: 340px;
+  }
+  .stylePagefirstBlock__header {
+    font-size: 74px;
+  }
+
+  .stylePageline {
+    width: 1160px;
+  }
+  .stylePagesecondBlock__item {
+    width: 1160px;
+  }
+
+  .stylePagesecondBlockMenu__button {
+    width: 1160px;
+  }
+
+  .stylePagesecondBlockMenu__text {
+    width: 1160px;
+  }
+
+  .stylePagefooter__socials {
+    flex-wrap: nowrap;
+  }
+
+  .stylePagefooter__wrapper {
+    display: flex;
+    justify-content: center;
+    column-gap: 150px;
+    padding-left: 160px;
+  }
+
+  .stylePagefooter__items {
+    padding-left: 0;
+  }
+
+  .stylePagefirstBlock__wrapper {
+    column-gap: 146px;
+  }
+
+  .stylePagebig {
+    height: 1250px;
+  }
+
+  .stylePagebath-grid {
+    grid-template-rows: minmax(auto, auto);
+  }
+
+  .stylePagemodalBig {
+    height: 750px;
+    width: 1000px;
+  }
+}
+
+.stylePageactiveBtn {
+  left: 25px;
+  box-shadow: inset 0px 0 17px 0px #e29a01;
+  content: "";
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  border-radius: 13px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  top: 0;
+  border: none;
+}
+
+.stylePageactive {
+  opacity: 1;
+  transform: scale(1);
+  filter: none;
+}
+
+.stylePagenotVisible {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.stylePagevisible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.stylePagenone {
+  display: none;
+}
+
+.stylePagemb60px {
+  margin-bottom: 60px;
+}
+
+.stylePageblock {
+  display: block;
+}
