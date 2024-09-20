@@ -20,7 +20,6 @@ import {
   basicConfigurationArchitectCottageHouse,
   basicConfigurationCloverCottageHouse,
   itemsHouse,
-  defineDomain,
 } from "../../houses.ts";
 import { typeInputsError } from "../typesAndIntefaces";
 
@@ -77,12 +76,12 @@ export function HousePage() {
   const getHouse = () => {
     const pathName = locationPage.pathname.split("/")[2];
     const house = itemsHouse.filter((item) => item.link === pathName)[0];
+    setCoustHouse(house.coust);
     setHouse(house);
 
     return house;
   };
-  const domain: string = defineDomain(location.hostname);
-  const fetchUrl: string = domain == "org" ? "./../1c_site.json" : "./../1c_bel_site.json";
+  const fetchUrl: string = "./../1c_bel_site.json";
 
   const fetchAdditionalServices = async (fetchUrl: string) => {
     const house = getHouse();
@@ -165,8 +164,6 @@ export function HousePage() {
         }
 
         setListActiveAdditionalServices([...array]);
-      } else {
-        setCoustHouse("Скоро будет доступна");
       }
     });
   };

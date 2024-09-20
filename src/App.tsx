@@ -10,13 +10,11 @@ import { PaymentPage } from "./components/paymentPage/paymentPage";
 import { HousePage } from "./components/housePage/HousePage";
 
 import Helmet from "react-helmet";
-import { defineDomain } from "./houses";
 
 function App() {
   const [scroll, setScroll] = useState(0);
   const [mainPage] = useState("/");
   const [bodyStyle, setBodyStyle] = useState("");
-  const domain: string = defineDomain(location.hostname);
 
   const handleScroll = () => {
     setScroll(window.scrollY);

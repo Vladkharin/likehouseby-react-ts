@@ -1,9 +1,6 @@
-import { defineDomain } from "../../../houses";
-
 export function SixthBlock() {
-  const domain: string = defineDomain(location.hostname);
   return (
-    <div id="map" className={domain == "org" ? "map" : "none"}>
+    <div id="map" className={"none"}>
       <div className="container">
         <div className="map__header">Карта земельных участков в продаже</div>
         <iframe
