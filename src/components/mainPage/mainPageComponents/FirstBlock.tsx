@@ -282,7 +282,7 @@ function formValidate(
         error++;
       }
 
-      if (input.value.length < 15 && input.value.length > 0) {
+      if (input.value.length < 14 && input.value.length > 0) {
         obj = { ...obj, inputPhone: "Слишком короткое значение" };
         error++;
       }
