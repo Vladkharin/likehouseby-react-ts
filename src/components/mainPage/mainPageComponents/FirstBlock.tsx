@@ -43,7 +43,7 @@ export function FirstBlock({ setBodyStyle }: Props) {
   return (
     <div className={"firstByBlock"}>
       <div className="container">{firstBlockBy(setStateModal)}</div>
-      <div className={"none"}>
+      <div className={"animation"}>
         <img src="./icons/partner.svg?ver=1" alt="partner" className="animation__spin" />
       </div>
 
@@ -364,10 +364,10 @@ function firstBlockBy(setStateModal: React.Dispatch<React.SetStateAction<boolean
     <>
       <div className="firstBlockBy__wrapper">
         <div className="firstBlockBy__header">
-          Лайк <span>Хаус</span>
+          <img src="./icons/лого.png" alt="" />
         </div>
         <div className="lineBy smallLineBy"></div>
-        <h1 className="firstBlockBy__title">Строим каркасные дома и бани с ориентированием на честное отношение к клиентам</h1>
+        <h1 className="firstBlockBy__title">Честно строим каркасные дома и бани для жизни круглый год по цене как на сайте</h1>
       </div>
       <div className="firstBlockBy__buttons">
         <div className="firstBlockBy__buttonMediaMax940px">

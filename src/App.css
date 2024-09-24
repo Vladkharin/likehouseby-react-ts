@@ -158,10 +158,11 @@ body {
 }
 
 .firstBlockBy__buttonMediaMax940px {
-  margin-top: 230px;
+  margin-top: 150px;
   width: 300px;
   height: 70px;
   cursor: pointer;
+  background-color: orange;
 }
 
 .firstBlockBy__buttonMediaMin940px {
@@ -1267,6 +1268,10 @@ body {
     position: static;
     width: 100%;
   }
+
+  .nav__wrapper{
+    padding: 10px 15px 0 0;
+  }
   .fourthAndThirdBlockTogether__menuWrapper {
     flex-wrap: nowrap;
     gap: 0px;
@@ -1364,7 +1369,7 @@ body {
     margin-top: 70px;
   }
   .firstBlockBy__buttonMediaMax940px {
-    margin-top: 70px;
+    margin-top: 40px;
   }
 
   .secondBlock {
@@ -1671,7 +1676,7 @@ body {
     text-align: start;
     position: relative;
     width: 330px;
-    font-size: 120px;
+    font-size: 150px;
   }
 
   .firstBlockBy__title {
@@ -1766,6 +1771,10 @@ body {
 
   .fourthAndThirdBlockTogether__tile {
     width: 300px;
+  }
+
+  .nav__wrapper{
+    padding: 10px 0 0 0;
   }
 
   .fourthAndThirdBlockTogether__inner {
@@ -1888,7 +1897,9 @@ body {
 
   .firstBlockBy__buttonMediaMin940px {
     display: block;
-    margin-top: 0;
+    margin-top: -10px;
+    background-color: orange;
+    width: 305px;
   }
 
   .firstBlockBy__buttonMediaMax940px {
@@ -1898,6 +1909,7 @@ body {
   .firstBlockBy__buttons {
     margin-top: 70px;
     flex-direction: row;
+    justify-content: right;
   }
 
   .firstBlock__texts {

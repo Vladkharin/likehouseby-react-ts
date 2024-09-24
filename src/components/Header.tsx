@@ -42,6 +42,9 @@ export function Header({ scroll, mainPage, setBodyStyle }: typeHeaderProps) {
                 <a href="#feedback" className="menu__link">
                   Отзывы
                 </a>
+                <a href="#contacts" className="menu__link">
+                  Контакты
+                </a>
               </div>
             </div>
             {menuIconsBy()}
@@ -137,6 +140,16 @@ function menu(
           >
             Отзывы
           </a>
+          <a
+            href="#contacts"
+            className="menu__link"
+            onClick={() => {
+              setMenuTel(false);
+              setBodyStyle("");
+            }}
+          >
+            Контакты
+          </a>
         </div>
         <button
           className="menu__Close"
@@ -155,6 +168,15 @@ function menu(
 function menuIconsBy() {
   return (
     <div className="nav__icons">
+      <a href="https://www.instagram.com/likehouse.by" className="nav__icon">
+        <img src="../icons/instaIcon.svg" alt="" />
+      </a>
+      <a href="https://teleg.run/Like_House_org" className="nav__icon">
+        <img src="./icons/TelegramIcon.svg" alt="" />
+      </a>
+      <a href="https://wa.clck.bar/375333623505" className="nav__icon">
+        <img src="./icons/WhatsappIcon.svg" alt="" />
+      </a>
       <a href="https://www.youtube.com/@likehouse_org" className="nav__icon">
         <img src="./icons/YouTubeIcon.svg" alt="" />
       </a>
@@ -167,11 +189,20 @@ function menuIconsBy() {
 
 function menuGreyIconsBy() {
   return (
-    <div className="nav__icons">
-      <a href="https://www.youtube.com/@likehouse_org" className="nav__icon">
+    <div className="stylePagenav__icons">
+      <a href="https://www.instagram.com/likehouse.by" className="stylePagenav__icon">
+        <img src="../icons/instaGreyIcon.svg" alt="" />
+      </a>
+      <a href="https://teleg.run/Like_House_org" className="stylePagenav__icon">
+        <img src="../icons/TelegramGreyIcon.svg" alt="" />
+      </a>
+      <a href="https://wa.clck.bar/375333623505" className="stylePagenav__icon">
+        <img src="../icons/WhatsappGreyIcon.svg" alt="" />
+      </a>
+      <a href="https://www.youtube.com/@likehouse_org" className="stylePagenav__icon">
         <img src="../icons/YouTubeGreyIcon.svg" alt="" />
       </a>
-      <a href="mailto:info@likehouse.org" className="nav__icon">
+      <a href="mailto:info@likehouse.org" className="stylePagenav__icon">
         <img src="../icons/EmailGreyIcon.svg" alt="" />
       </a>
     </div>

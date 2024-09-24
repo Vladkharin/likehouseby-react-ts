@@ -25,9 +25,9 @@ export function Footer() {
 
   function footerAddressBy() {
     return (
-      <div className="footer__item-title">
+      <div id="contacts" className="footer__item-title">
         Офис: г. Мозырь <br />
-        ул. Якуба Коласа, д. 1, каб. 21 <br />
+        ул. Якуба Коласа, д. 1, каб. 201 <br />
         <a className="footer__item-linkWithdecoration" href="https://yandex.ru/maps/-/CDWtBGMS">
           Показать на карте
         </a>{" "}
@@ -54,8 +54,14 @@ export function Footer() {
   function footerSocialBy() {
     return (
       <div className="footer__socials">
-        <a href="mailto:info@likehouse.org">
-          <img src="../icons/EmailIcon.svg" alt="" className="footer__social" />
+        <a href="https://www.instagram.com/likehouse.by">
+          <img src="./icons/instaIcon.svg" alt="" className="footer__social" />
+        </a>
+        <a href="https://teleg.run/Like_House_org">
+          <img src="./icons/TelegramIcon.svg" alt="" className="footer__social" />
+        </a>
+        <a href="https://wa.clck.bar/375333623505">
+          <img src="./icons/WhatsappIcon.svg" alt="" className="footer__social" />
         </a>
         <a href="https://www.youtube.com/@likehouse_org">
           <img src="../icons/YouTubeIcon.svg" alt="" className="footer__social" />
