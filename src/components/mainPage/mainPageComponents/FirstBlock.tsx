@@ -364,7 +364,7 @@ function firstBlockBy(setStateModal: React.Dispatch<React.SetStateAction<boolean
     <>
       <div className="firstBlockBy__wrapper">
         <div className="firstBlockBy__header">
-          <img src="./icons/лого.png" alt="" />
+          <img src="./icons/лого.svg" alt="" />
         </div>
         <div className="lineBy smallLineBy"></div>
         <h1 className="firstBlockBy__title">Честно строим каркасные дома и бани для жизни круглый год по цене как на сайте</h1>
