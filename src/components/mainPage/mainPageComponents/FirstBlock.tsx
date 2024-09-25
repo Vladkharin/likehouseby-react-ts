@@ -44,7 +44,7 @@ export function FirstBlock({ setBodyStyle }: Props) {
     <div className={"firstByBlock"}>
       <div className="container">{firstBlockBy(setStateModal)}</div>
       <div className={"animation"}>
-        <img src="./icons/partner.svg?ver=1" alt="partner" className="animation__spin" />
+        <img src="./icons/partner.svg" alt="partner" className="animation__spin" />
       </div>
 
       {modal(
