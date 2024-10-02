@@ -11,13 +11,13 @@ type typeItem = {
 const items: typeItems = [
   {
     value: "01",
-    title: "ЭКОНОМИЯ НА ОТДЕЛКЕ",
+    title: "ДОСТУПНЫЕ ЦЕНЫ",
     subtitle:
       "Стоимость каркасных домов обычно ниже каменных и брусовых, но не уступают в надежности и теплосберегающих свойствах. Строительные материалы остаются более доступными по цене. Также их можно собрать вручную, не нанимая строительную технику и не организуя площадку для нее.",
   },
   {
     value: "02",
-    title: "МАЛЫЙ ВЕС",
+    title: "ЭКОНОМИЯ НА ОТДЕЛКЕ",
     subtitle:
       "В каменном доме без внутренней отделки не обойтись – невозможно жить в голых кирпичных стенах. А вот дерево в дополнительной отделке не нуждается.",
   },
@@ -157,9 +157,7 @@ function modal(
           if (index == activeSlide) {
             activeClassImg = "";
           }
-          return (
-            <img key={index + 120011} className={"modalImgSlider__img " + activeClassImg} src={img} alt="fifthBlockFirstimg" />
-          );
+          return <img key={index + 120011} className={"modalImgSlider__img " + activeClassImg} src={img} alt="fifthBlockFirstimg" />;
         })}
       </div>
       <button className="modalImgSlider__button-right" onClick={() => setActiveSlide(activeSlide + 1)}>
@@ -173,7 +171,8 @@ function modal(
         onClick={() => {
           setStateModal(false);
           setBodyStyle("");
-        }}>
+        }}
+      >
         {" "}
       </button>
     </div>
