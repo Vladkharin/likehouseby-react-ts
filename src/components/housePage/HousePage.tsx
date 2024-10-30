@@ -73,6 +73,8 @@ export function HousePage() {
     Скважина: 0,
   });
 
+  console.log(house);
+
   const getHouse = () => {
     const pathName = locationPage.pathname.split("/")[2];
     const house = itemsHouse.filter((item) => item.link === pathName)[0];
@@ -185,6 +187,9 @@ export function HousePage() {
   });
 
   function viewAddtionalServicesBlock() {
+    if (!additionalService && coustHouse) {
+      return;
+    }
     return (
       <>
         <div className="stylePagesecondBlock__header">Дополнительные услуги</div>
@@ -202,7 +207,7 @@ export function HousePage() {
             wallsAndCeilings
           )
         ) : (
-          <div>Загружается</div>
+          <div>Пока не добавили</div>
         )}
       </>
     );
@@ -246,7 +251,7 @@ export function HousePage() {
           <div className="stylePagesecondBlock__header">Базовая комплектация проекта</div>
           {house ? basicConfiguration(house) : false}
 
-          {house?.type != "bathhouse" ? viewAddtionalServicesBlock() : ""}
+          {viewAddtionalServicesBlock()}
         </div>
       </div>
       {/* <button className="stylePageorder" onClick={() => setStateModalForm(true)}>
