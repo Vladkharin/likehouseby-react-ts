@@ -1,0 +1,25 @@
+.slider {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+@media (min-width:960px){
+    
+  .slider {
+    flex-direction: row;
+  }
+
+}
+
+@media (min-width: 1200px) {
+    
+    .slider {
+        display: flex;
+        gap: 30px;
+        position: relative;
+    }
+}

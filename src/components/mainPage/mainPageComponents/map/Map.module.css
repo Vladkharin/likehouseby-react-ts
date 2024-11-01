@@ -1,0 +1,60 @@
+.map {
+  padding: 90px 0 0 0;
+  background-color: #f7f7f7;
+}
+
+.header {
+  color: #31373e;
+  font-size: 54px;
+  line-height: 1.15;
+  font-weight: 400;
+}
+
+.iframe {
+  width: 100%;
+  margin-top: 40px;
+  height: 500px;
+}
+
+@media (min-width: 481px) {
+  .header {
+    color: #31373e;
+    font-size: 54px;
+    line-height: 1.15;
+    font-weight: 400;
+  }
+
+  .iframe {
+    width: 100%;
+    margin-top: 40px;
+    height: 500px;
+  }
+}
+@media (min-width: 640px) {
+  .header {
+    color: #31373e;
+    font-size: 54px;
+    line-height: 1.15;
+    font-weight: 400;
+    padding-right: 10px;
+  }
+
+  .iframe {
+    width: 100%;
+    margin-top: 40px;
+    height: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    color: #31373e;
+    font-size: 74px;
+    line-height: 1.15;
+    font-weight: 400;
+  }
+
+  .iframe {
+    height: 720px;
+  }
+}

@@ -1,0 +1,261 @@
+.nav {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all 0.4s cubic-bezier(0, 0, 0.8, 1);
+}
+
+.nav_blue {
+    background-color: rgb(7, 64, 151);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    height: 91px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    cursor: pointer;
+}
+
+.links {
+    display: none;
+}
+
+.link {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    font-family: "FuturaPTWebLight";
+}
+
+.menu_links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.icons {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.icon img {
+    width: 35px;
+    height: 35px;
+}
+
+.close_button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.close_button::before,
+.close_button::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+}
+
+.close_button::before {
+  transform: rotate(45deg);
+}
+
+.close_button::after {
+  transform: rotate(-45deg);
+}
+
+.page_icons {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.page_icon {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+  
+.page_icon img {
+    width: 35px;
+    height: 35px;
+}
+
+.page_nav {
+    font-family: "FuturaPTWebLight";
+    height: 101px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background-color: #fff;
+    border-bottom: 1px solid #31373e;
+    transition: all 0stylePage4s cubic-bezier(0, 0, 0stylePage8, 1);
+}
+
+.page_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.page_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 30px;
+    cursor: pointer;
+}
+
+.page_link_to_main_page {
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #31373e;
+}
+
+.item_title {
+    display: none;
+}
+
+
+
+.item_link {
+    color: #fff;
+    border-bottom: none;
+    box-shadow: none;
+    text-decoration: none;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: "FuturaPTWebLight";
+}
+  
+
+@media (min-width: 481px) {
+    .nav {
+        height: 93px;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .page_icons {
+        width: 70%;
+    }
+
+    .page_wrapper {
+        height: 101px;
+    }
+
+    .item_title {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+@media (min-width: 640px) {
+    .icons {
+        width: 70%;
+        column-gap: 15px;
+    }
+
+    .icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .icon img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .page_icons {
+        width: 35%;
+    }
+}
+@media (min-width: 960px) {
+    .page_icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .page_icon img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .page_menu {
+        flex-basis: 56%;
+    }
+
+    .page_icons {
+        flex-basis: 44%;
+    }
+
+    
+}
+@media (min-width: 1200px) {
+    .item_title {
+        display: block;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .page_menu {
+        flex-basis: 45%;
+    }
+
+    .page_icons {
+        flex-basis: 55%;
+    }
+
+    .links {
+        display: flex;
+        column-gap: 36px;    
+    }
+
+    .icons {
+        width: 25%;
+    }
+}

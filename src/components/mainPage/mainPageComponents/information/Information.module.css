@@ -1,0 +1,412 @@
+.information {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url("../img/BackGround_FirstBlock_320pxMedia.jpg") center center/cover no-repeat;
+  width: 100%;
+  height: 850px;
+  z-index: 1;
+  padding-top: 115px;
+  position: relative;
+}
+
+.animation {
+  overflow: hidden;
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  bottom: -30px;
+}
+
+.spin {
+  animation: spin 20s linear 0s infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: translateX(0px);
+    animation-timing-function: linear;
+  }
+  100% {
+    transform: translateX(-551px);
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.line {
+  width: 300px;
+  height: 1px;
+  background-color: #fff;
+  opacity: 0.25;
+  display: none;
+}
+
+.header {
+  color: #fff;
+  font-size: 70px;
+  font-weight: 400;
+  font-style: normal;
+  word-spacing: 4.7px;
+  line-height: 1.3;
+  text-align: left;
+  text-align: center;
+  display: none;
+}
+
+.texts_right_side_desc {
+  margin-top: 82px;
+  padding-left: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.25;
+  text-align: center;
+  display: none;
+}
+
+.texts_right_side_mob {
+  margin-top: 100px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.img {
+  width: 295px;
+}
+
+.text_small {
+  font-size: 15px;
+}
+
+.logo {
+  position: absolute;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.button_mob {
+  margin-top: 150px;
+  width: 300px;
+  height: 70px;
+  cursor: pointer;
+}
+
+.button_mob a button {
+  width: 300px;
+  height: 70px;
+  border: #fff solid 3px;
+  background: orange;
+  font-family: "FuturaPTWebBold";
+  font-size: 20px;
+  line-height: 1.55;
+  font-weight: 500;
+  font-style: normal;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button_mob a {
+  font-family: "FuturaPTWebBold";
+  font-size: 20px;
+  line-height: 1.55;
+  font-weight: 500;
+  font-style: normal;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button_map p {
+  padding: 0;
+  margin: 0;
+  width: 300px;
+  height: 70px;
+  border: rgb(125, 252, 66) solid 3px;
+  background: rgba(125, 252, 66, 0.5);
+  font-family: "FuturaPTWebBold";
+  font-size: 19px;
+  line-height: 3.5;
+  font-weight: 500;
+  font-style: normal;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button_map > a {
+  font-family: "FuturaPTWebBold";
+  font-size: 20px;
+  line-height: 1.55;
+  font-weight: 500;
+  font-style: normal;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button_map > a > button {
+  width: 300px;
+  height: 70px;
+  border: #fff solid 3px;
+  background: rgba(0, 0, 0, 0);
+  font-family: "FuturaPTWebBold";
+  font-size: 20px;
+  line-height: 1.55;
+  font-weight: 500;
+  font-style: normal;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button_desc {
+  background-color: orange;
+  margin-top: 70px;
+  width: 308px;
+  height: 70px;
+  display: none;
+}
+
+.button_desc button {
+  width: 308px;
+  height: 70px;
+  border: #fff solid 3px;
+  background: rgba(0, 0, 0, 0);
+  font-family: "FuturaPTWebBold";
+  font-size: 20px;
+  line-height: 1.55;
+  font-weight: 500;
+  font-style: normal;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (min-width: 481px) {
+  .information {
+    padding-top: 80px;
+    height: 750px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+      url("../img/BackGround_firstBlock.jpg") center center/cover no-repeat;
+  }
+
+  .header {
+    font-size: 100px;
+  }
+
+  .line {
+    width: 460px;
+  }
+
+  .text_big {
+    font-size: 29px;
+    font-weight: bold;
+  }
+
+  .text_small {
+    font-size: 20px;
+  }
+
+  .logo {
+    left: 90px;
+  }
+
+  .button_mob {
+    margin-top: 70px;
+  }
+}
+@media (min-width: 640px) {
+  .information {
+    height: 710px;
+  }
+
+  .wrapper {
+    flex-direction: row;
+    height: 250px;
+    justify-content: space-between;
+  }
+
+  .header {
+    text-align: end;
+    position: relative;
+    width: 266px;
+    font-size: 30px;
+    margin-top: 82px;
+  }
+
+  .line {
+    width: 620px;
+  }
+
+  .texts_right_side_mob {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 82px;
+    font-weight: 400;
+    padding-left: 30px;
+    gap: 20px;
+  }
+
+  .img {
+    width: 390px;
+  }
+
+  .text {
+    text-align: start;
+    line-height: 1.3;
+    font-style: normal;
+    margin: 0;
+  }
+
+  .text_big {
+    width: 480px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.3;
+    font-style: normal;
+    margin: 0;
+  }
+
+  .text_small {
+    font-size: 20px;
+    width: 395px;
+    line-height: 1.1;
+    text-align: center;
+    font-style: normal;
+    margin: 0;
+  }
+
+  .logo {
+    left: 195px;
+    width: 230px;
+  }
+
+  .buttons {
+    margin-top: 30px;
+  }
+
+  .button_mob {
+    margin: 0;
+  }
+}
+@media (min-width: 960px) {
+  .information {
+    height: 570px;
+  }
+
+  .header {
+    text-align: end;
+    position: relative;
+    width: 266px;
+    font-size: 37px;
+    margin-top: 82px;
+    display: flex;
+  }
+
+  .line {
+    position: absolute;
+    left: 275px;
+    margin-top: 100px;
+    display: block;
+    width: 175px;
+    height: 3px;
+    opacity: 1;
+  }
+
+  .texts_right_side_mob {
+    display: none;
+  }
+
+  .texts_right_side_desc {
+    display: flex;
+    align-items: start;
+    width: 510px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .texts_right_side_desc > img {
+    width: 390px;
+  }
+
+  .text_big {
+    text-align: start;
+  }
+
+  .text_small {
+    text-align: start;
+  }
+
+  .logo {
+    top: 200px;
+    left: 0px;
+  }
+
+  .buttons {
+    margin-top: 60px;
+    flex-direction: row;
+    gap: 160px;
+  }
+
+  .button_mob {
+    display: none;
+  }
+
+  .button_desc {
+    margin-top: 0;
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .information {
+    height: 760px;
+  }
+
+  .line {
+    width: 300px;
+    left: 285px;
+    margin-top: 105px;
+  }
+
+  .texts_right_side_desc {
+    width: 580px;
+  }
+
+  .text_big {
+    width: 559px;
+    font-size: 37px;
+  }
+
+  .text_small {
+    font-size: 30px;
+    width: 395px;
+    line-height: 1.1;
+  }
+
+  .texts_right_side_desc > img {
+    width: 439px;
+  }
+
+  .logo {
+    top: 205px;
+    width: 270px;
+  }
+
+  .buttons {
+    gap: 300px;
+  }
+}

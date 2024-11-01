@@ -1,0 +1,284 @@
+.catalog {
+    display: flex;
+}
+
+.inner {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 14px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.header {
+    color: #31373e;
+    font-size: 54px;
+    line-height: 1.55;
+    font-weight: 400;
+    align-self: start;
+}
+
+.menu_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.text {
+    width: 140px;
+    height: 48px;
+    text-align: center;
+    color: #31373e;
+    background: rgba(256, 256, 256, 1);
+    border: 1px solid #31373e;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    cursor: pointer;
+    font-family: "FuturaPTWebBold";
+}
+
+.tile {
+    position: relative;
+    height: 280px;
+    width: 145px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+    text-decoration: none;
+}
+
+.tile_text {
+    width: 100%;
+    height: 35px;
+    color: #31373e;
+    background: rgba(256, 256, 256, 1);
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 16px;
+    cursor: pointer;
+}
+
+.tile_link {
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    bottom: 0;
+    right: 0;
+}
+
+.tile_link > img {
+    width: 100px;
+}
+
+.category_header {
+    position: relative;
+    width: 100%;
+    font-size: 40px;
+}
+
+.line {
+    position: absolute;
+    width: calc(100% + 40px);
+    height: 1px;
+    background-color: black;
+    right: 0;
+}
+
+
+
+@media (min-width: 360px) {
+    
+    .container_enlargement {
+        width: 350px;
+    }
+
+    .tile {
+        width: 160px;
+        height: 290px;
+        padding-left: 5px;
+    }
+
+    .tile_text {
+        font-size: 13px;
+    }
+
+    .tile_link > img {
+        width: 120px;
+    }
+
+}
+
+@media(min-width: 400px) {
+    .container_enlargement {
+        width: 390px;
+    }
+
+    .tile {
+        width: 185px;
+        height: 310px;
+    }
+
+    .tile_text {
+        font-size: 15px;
+    }
+    
+}
+
+
+@media (min-width: 481px){
+
+    .catalog {
+        padding-top: 69px;
+        display: block;
+    }
+
+    .inner {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 40px;
+        column-gap: 40px;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .header {
+        color: #31373e;
+        font-size: 54px;
+        line-height: 1.55;
+        font-weight: 400;
+        align-self: start;
+    }
+
+    .menu_wrapper {
+        width: 300px;
+    }
+
+    .tile {
+        height: 390px;
+        width: 200px;
+        border-left: 1px solid #000;
+        border-bottom: 1px solid #000;
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+    }
+
+    .tile_img {
+        margin-bottom: 20px;
+    }
+
+    
+    .tile_text {
+        width: 100%;
+        height: 48px;
+        color: #31373e;
+        background: rgba(256, 256, 256, 1);
+        font-size: 16px;
+        font-weight: 400;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        cursor: pointer;
+    }
+    
+    .tile_link {
+        display: flex;
+        justify-content: end;
+        margin-top: 20px;
+    }
+
+    .tile_link > img {
+        width: 150px;
+    }
+
+    .line {
+        position: static;
+        width: 100%;
+    }
+}
+@media (min-width: 640px){
+    .inner {
+        column-gap: 20px;
+        justify-content: normal;
+    }
+
+    .text {
+        width: 140px;
+        height: 48px;
+        text-align: center;
+        color: #31373e;
+        background: rgba(256, 256, 256, 1);
+        border: 1px solid #31373e;
+        font-size: 14px;
+        font-weight: 400;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        cursor: pointer;
+    }
+
+    .tile {
+        height: 487px;
+        width: 300px;
+    }
+
+    .menu_wrapper {
+        flex-wrap: nowrap;
+        gap: 0;
+        width: auto;
+    }
+
+    .tile_text {
+        font-size: 20px;
+    }
+
+    .tile_link > img {
+        width: 200px;
+    }
+}
+@media (min-width: 960px){}
+@media (min-width: 1200px){
+    
+    .inner {
+        column-gap: 41px;
+        justify-content: start;
+    }
+
+    .header {
+        font-size: 74px;
+    }
+
+    .menu_wrapper {
+        display: flex;
+    }
+
+    .tile {
+        width: 359px;
+        height: 532px;
+    }
+
+    .tile_img {
+        width: 340px;
+        height: 255px;
+    }
+    
+}
+
+.change_bg {
+    font-family: "FuturaPTWebBold";
+    background: #31373e;
+    color: #ffffff;
+}

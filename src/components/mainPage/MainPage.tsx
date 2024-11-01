@@ -1,10 +1,10 @@
-import { FirstBlock } from "./mainPageComponents/FirstBlock";
-import { SecondBlock } from "./mainPageComponents/SecondBlock";
-import { ThirdBlock } from "./mainPageComponents/ThirdBlock";
-import { FourthBlock } from "./mainPageComponents/FourthBlock";
-import { FifthBlock } from "./mainPageComponents/FifthBlock";
-import { EightBlock } from "./mainPageComponents/EightBlock";
 import React, { SetStateAction, useEffect } from "react";
+import { Catalog } from "./mainPageComponents/catalog/Catalog";
+import { About } from "./mainPageComponents/about/About";
+import { AdditionalServices } from "./mainPageComponents/additionalServices/AdditionalServices";
+import { Technology } from "./mainPageComponents/technology/Technology";
+import { Feedback } from "./mainPageComponents/feedback/Feedback";
+import { FirstBlock } from "./mainPageComponents/FirstBlock";
 
 type MainPageProps = {
   setBodyStyle: React.Dispatch<SetStateAction<string>>;
@@ -20,11 +20,11 @@ export function MainPage({ setBodyStyle }: MainPageProps) {
   return (
     <>
       <FirstBlock setBodyStyle={setBodyStyle} />
-      <SecondBlock />
-      <ThirdBlock />
-      <FourthBlock setBodyStyle={setBodyStyle} />
-      <FifthBlock />
-      <EightBlock />
+      <About />
+      <Catalog />
+      <Technology />
+      <AdditionalServices />
+      <Feedback />
     </>
   );
 }

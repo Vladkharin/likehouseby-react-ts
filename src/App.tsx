@@ -4,9 +4,8 @@ import "./fonts/stylesheet.css";
 import { MainPage } from "./components/mainPage/MainPage";
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Header } from "./components/Header";
-import { Footer } from "./components/Footer";
-import { PaymentPage } from "./components/paymentPage/paymentPage";
+import { Header } from "./components/header/Header";
+import { Footer } from "./components/footer/Footer";
 import { HousePage } from "./components/housePage/HousePage";
 
 function App() {
@@ -31,8 +30,7 @@ function App() {
     <Router>
       <Header scroll={scroll} mainPage={mainPage} setBodyStyle={setBodyStyle} />
       <Routes>
-        <Route path={"/:anchor?"} element={<MainPage setBodyStyle={setBodyStyle} />} />
-        <Route path={"/payment"} element={<PaymentPage />} />
+        <Route path={"/"} element={<MainPage setBodyStyle={setBodyStyle} />} />
         <Route path={"/houses/:houseName?"} element={<HousePage />} />
       </Routes>
       <Footer />

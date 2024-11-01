@@ -1,0 +1,435 @@
+
+.position_error_first_input {
+    top: 180px;
+    left: 50px; 
+}
+
+.position_error_second_input {
+    top: 280px;
+    left: 50px;
+}
+
+.feedBack {
+    display: none;
+}
+
+.modal {
+    background-color: #fff;
+    padding: 40px 40px 50px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.6);
+    cursor: default;
+    width: 940px;
+    height: 470px;
+    position: absolute;
+}
+
+.modal_wrapper {
+    background-color: #fff;
+    padding: 40px 40px 50px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    cursor: default;
+    width: 360px;
+    height: 185px;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+}
+
+
+.modal_btn_close {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+.complete {
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #62c584;
+    border-radius: 100%;
+    position: relative;
+}
+  
+.complete::after {
+    width: 15px;
+    height: 11px;
+    content: "\2713";
+    color: #62c584;
+    position: absolute;
+    top: 14px;
+    left: 16px;
+}
+
+.failure {
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    border-radius: 100%;
+    position: relative;
+}
+  
+.failure::after {
+    width: 15px;
+    height: 11px;
+    content: "\2715";
+    color: red;
+    position: absolute;
+    top: 12px;
+    left: 18px;
+}
+
+.modal_text {
+    padding-top: 20px;
+    font-family: "FuturaPTWebLight";
+}
+  
+
+@media (min-width: 481px) {
+    .position_error_first_input{
+        top: 160px;
+        left: 90px; 
+    }
+
+    .position_error_second_input {
+        top: 230px;
+        left: 90px;
+    }
+}
+
+@media(min-width: 960px) {
+    .feedBack {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        top: 0;
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .wrapper {
+        width: 940px;
+        height: 470px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .main_img {
+        width: 470px;
+        height: 470px;
+    }
+
+    .form {
+        width: 470px;
+        height: 470px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0 20px 0;
+        position: relative;
+    }
+
+    .header {
+        color: #31373e;
+        font-size: 40px;
+        line-height: 1.55;
+        font-weight: 400;
+    }
+
+    .text_input {
+        width: 300px;
+        height: 50px;
+        border: 1px solid #000;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 0 20px;
+        margin-top: 20px;
+    }
+
+    
+
+    .menu {
+        width: 70px;
+        height: 48px;
+        background: rgba(0, 0, 0, 0);
+        position: absolute;
+        top: 193px;
+        right: 300px;
+        display: flex;
+        align-items: center;
+        column-gap: 6px;
+        cursor: pointer;
+    }
+
+    .flag {
+        background: url("../img/flags5.png");
+        background-position: -285px -281px;
+        width: 18px;
+        height: 18px;
+        margin-top: 5px;
+    }
+
+    .arrow {
+        border-style: solid;
+        border-width: 5px 4px 0;
+        border-color: #9a9a9a transparent transparent;
+    }
+
+    .telephone_code{
+        font-size: 16px;
+        font-weight: 400;
+        display: flex;
+        justify-content: end;
+        min-width: 10px;
+        max-width: 60px;
+    }
+    
+    .phone_input {
+        width: 300px;
+        height: 50px;
+        border: 1px solid #000;
+        font-size: 16px;
+        font-weight: 400;
+        padding-left: 100px;
+        padding-right: 20px;
+        margin-top: 20px;
+    }
+
+    .btn_submit {
+        width: 300px;
+        height: 70px;
+        border: 2px solid #000;
+        font-size: 16px;
+        font-weight: 400;
+        background-color: #ffffff;
+        margin-top: 20px;
+        cursor: pointer;
+        font-family: 'FuturaPTWebBold';
+        font-size: 20px;
+    }
+
+    @-webkit-keyframes load3 {
+        0% {
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes load3 {
+        0% {
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+
+    .loader {
+        overflow: hidden;
+        font-size: 10px;
+        text-indent: -9999em;
+        width: 5em;
+        height: 5em;
+        border-radius: 100%;
+        background: #65abf8;
+        background: -moz-linear-gradient(left, #65abf8 10%, rgba(101, 171, 248, 0) 42%);
+        background: -webkit-linear-gradient(left, #65abf8 10%, rgba(101, 171, 248, 0) 42%);
+        background: -o-linear-gradient(left, #65abf8 10%, rgba(101, 171, 248, 0) 42%);
+        background: -ms-linear-gradient(left, #65abf8 10%, rgba(101, 171, 248, 0) 42%);
+        background: linear-gradient(to right, #65abf8 10%, rgba(101, 171, 248, 0) 42%);
+        position: relative;
+        -webkit-animation: load3 1.4s infinite linear;
+        animation: load3 1.4s infinite linear;
+        -webkit-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        transform: translateZ(0);
+        margin: 0 auto;
+    }
+
+    .loader:before {
+        width: 50%;
+        height: 50%;
+        background: #65abf8;
+        border-radius: 100% 0 0 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+    }
+
+    .loader:after {
+        background: white;
+        width: 75%;
+        height: 75%;
+        border-radius: 50%;
+        content: "";
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .block {
+        display: block;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .privacy_policy {
+        margin-top: 10px;
+        color: #31373e;
+        font-size: 15px;
+        line-height: 1.55;
+        font-weight: 400;
+        width: 200px;
+        width: 231px;
+        text-align: center;
+    }
+
+    .privacy_policy a {
+        color: #31373e;
+        font-size: 15px;
+        line-height: 1.55;
+        font-weight: 400;
+        text-decoration: none;
+        border-bottom: 1px solid rgb(49, 55, 62);
+    }
+
+    .img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .imgs {
+        display: flex;
+        column-gap: 20px;
+        margin-top: 10px;
+    }
+
+    .touch {
+        width: 33px;
+        height: 40px;
+        position: absolute;
+        top: 315px;
+        right: 100px;
+    }
+
+
+    .buttons {
+        position: absolute;
+        flex-direction: column;
+        height: 200px;
+        width: 350px;
+        padding: 10px 0;
+        background-color: #fff;
+        border: 1px solid #eee;
+        border-radius: 7px;
+        overflow-y: scroll;
+        top: 223px;
+        right: 35px;
+        z-index: 10;
+    }
+
+    .error_text {
+        position: absolute;
+        color: red;
+        background-color: #fff;
+        padding: 8px 10px;
+        border-radius: 2px;
+        z-index: 1;
+        margin-top: 5px;
+        box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .error_text::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: -12px;
+        left: 15%;
+        border: 6px solid transparent;
+        border-bottom-color: transparent;
+        border-bottom-color: #fff;
+    }
+
+    .menu_button {
+        background-color: #fff;
+        display: flex;
+        cursor: pointer;
+        justify-content: space-between;
+        width: 330px;
+        padding: 8px 10px;
+    }
+
+    .menu_button:hover {
+        background-color: #eee;
+    }
+
+    .country_name {
+        font-family: sans-serif;
+        font-size: 14px;
+        color: #000;
+    }
+
+    .country_code_and_flag {
+        font-family: sans-serif;
+        font-size: 14px;
+        color: #000;
+        display: flex;
+        column-gap: 10px;
+    }
+
+    
+    .form_btn_close {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: -40px;
+        right: 0;
+        cursor: pointer;
+    }
+
+    .form_btn_close img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .required:focus {
+        border: 1px solid #000;
+    }
+
+    .error {
+        border: 1px solid red;
+    }
+}
