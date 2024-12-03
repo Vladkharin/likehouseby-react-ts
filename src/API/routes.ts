@@ -1,4 +1,4 @@
-let API_URL = "http://likehouse-back.ru/api";
+let API_URL = "https://likehouse-back.ru/api";
 
 type OPTIONS = {
   method: string;
@@ -20,7 +20,7 @@ const f = async (method: string, data: string, url: string) => {
 
   if (data != "") {
     options.body = data as string;
-    API_URL = "http://likehouse-back.ru/api";
+    API_URL = "https://likehouse-back.ru/api";
   }
 
   const response = await fetch(API_URL + url, options);

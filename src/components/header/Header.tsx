@@ -43,6 +43,9 @@ export function Header({ scroll, mainPage, setBodyStyle }: typeHeaderProps) {
                 <a href="#feedback" className={styles.link}>
                   Отзывы
                 </a>
+                <a href="#contacts" className={styles.link}>
+                  Контакты
+                </a>
               </div>
             </div>
             {MenuIcons()}

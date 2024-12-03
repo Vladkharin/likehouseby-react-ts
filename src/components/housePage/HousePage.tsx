@@ -256,7 +256,7 @@ export function HousePage() {
       <div className={styles.coust}>
         Стоимость
         <span>
-          {coustHouse == "Скоро будет доступна" ? ": Скоро будет" : `: ${stringConversion(coustHouse, priceAdditionalServices)} BYN.`}
+          {coustHouse == "Скоро будет доступна" ? ": Скоро будет" : `: ${stringConversion(coustHouse, priceAdditionalServices)} BYN`}
         </span>
       </div>
       <div id="id" className={styles.none}>
@@ -333,7 +333,7 @@ function houseInformation(
         <div className={styles.button}>
           Стоимость
           <span>
-            {coustHouse == "Скоро будет доступна" ? ": Скоро будет" : `: ${stringConversion(coustHouse, priceAdditionalServices)} BYN.`}
+            {coustHouse == "Скоро будет доступна" ? ": Скоро будет" : `: ${stringConversion(coustHouse, priceAdditionalServices)} BYN`}
           </span>
         </div>
         <div

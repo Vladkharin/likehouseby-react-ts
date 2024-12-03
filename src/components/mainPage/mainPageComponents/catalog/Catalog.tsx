@@ -140,7 +140,7 @@ function ModalHouse(task: typeItemHouse) {
         <div className={styles.tile_text}>{task.information ? task.information[0] : false}</div>
         <div className={styles.tile_text}>{task.information ? task.information[1] : false}</div>
         <div className={styles.tile_text} id={task.code}>
-          Стоимость: {stringConversion(task.coust)} BYN.
+          Стоимость: {stringConversion(task.coust)} BYN
         </div>
         <div className={styles.tile_link}>
           <img src="./icons/textSvg.svg" alt="link" />
@@ -162,7 +162,7 @@ function ModalBathHouse(task: typeItemHouse) {
         <div className={styles.tile_text}>{task.information ? task.information[0] : false}</div>
         <div className={styles.tile_text}>{task.information ? task.information[1] : false}</div>
         <div className={styles.tile_text} id={task.code}>
-          Стоимость: {task.coust === "Скоро будет доступна" ? "Скоро будет доступна" : stringConversion(task.coust) + " BYN."}
+          Стоимость: {task.coust === "Скоро будет доступна" ? "Скоро будет доступна" : stringConversion(task.coust) + " BYN"}
         </div>
         <div className={styles.tile_link}>
           <img src="./icons/textSvg.svg" alt="link" />
